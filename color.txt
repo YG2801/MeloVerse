@@ -1,0 +1,50 @@
+****** Blue Theme *****
+
+--primary-text-color: #fffff2;
+--secondary-text-color: #c5c5c5;
+--primary-bg-color: #101010;
+--main-bg-color: #010220;
+--main-bg-lighter-color: #090947;
+--main-bg-lightest-color: #101267;
+--light-shade-color: #4782ca;
+--lighter-shade-color: #67a5e8;
+--card-bg-color: rgba(105, 105, 105, 0.2);
+--player-section-bg-color: #030418;
+--slider-color: rgb(105, 105, 170, 0.3);
+--nav-li-hover-color: white;
+--nav-search-color: rgb(184, 184, 184, 0.1);
+
+
+
+
+**** Green Theme ****
+--primary-text-color: #fffff2;
+--secondary-text-color: #c5c5c5;
+--primary-bg-color: #101010;
+--main-bg-color: #041506;
+--main-bg-lighter-color: #083307;
+--main-bg-lightest-color: #084410;
+--light-shade-color: #46b136;
+--lighter-shade-color: #62cb52;
+--card-bg-color: rgba(105, 105, 105, 0.2);
+--player-section-bg-color: #030f04;
+--slider-color: rgb(105, 105, 170, 0.3);
+--nav-li-hover-color: white;
+--nav-search-color: rgb(184, 184, 184, 0.1);
+
+
+**** Yellow Theme****
+
+--primary-text-color: #fffff2;
+--secondary-text-color: #c5c5c5;
+--primary-bg-color: #101010;
+--main-bg-color: #141004;
+--main-bg-lighter-color: #3d350a;
+--main-bg-lightest-color: #7d7019;
+--light-shade-color: #bdb53c;
+--lighter-shade-color: #c1cb52;
+--card-bg-color: rgba(105, 105, 105, 0.2);
+--player-section-bg-color: #0f0f03;
+--slider-color: rgb(105, 105, 170, 0.3);
+--nav-li-hover-color: white;
+--nav-search-color: rgb(184, 184, 184, 0.1);

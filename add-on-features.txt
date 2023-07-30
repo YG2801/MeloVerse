@@ -1,0 +1,9 @@
+1. Do not shuffle the side-bar playlist , Instead create a shuffle btn over there and when it is clicked than render out new playlist on side panel
+
+2. Use local Storage to start playing the last song you listened before closing the app
+
+3. Voice Search
+
+4. Change Theme
+
+5. Specific Artist Songs
