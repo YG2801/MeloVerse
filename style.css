@@ -69,11 +69,11 @@ main {
     margin: 0.6em 0 0 1em;
 }
 
-/* .side-bar .side-bar-back-btn{
+.side-bar .side-bar-back-btn{
     margin-top: 0.9em;
     margin-right: 0.6em;
     display: none;
-} */
+}
 
 .playlist-menu {
     margin: 2.5em 0 0 1.5em;
@@ -367,6 +367,11 @@ main {
     margin-block: 1em;
     align-items: center;
     justify-content: space-between;
+    position: relative;
+}
+
+.main-section nav .hamburger-icon{
+    display: none;
 }
 
 .main-section nav ul {
@@ -493,9 +498,9 @@ main {
     box-shadow: 0 0 10px white;
 }
 
-/* .main-section nav .playlist-icon {
+.main-section nav .playlist-icon {
     display: none;
-} */
+}
 
 .main-section .artist-content {
     width: 90%;
@@ -521,10 +526,13 @@ main {
 .main-section .artist-content h1 {
     font-size: 2.7rem;
     margin-bottom: 0.5em;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 .main-section .artist-content h4 {
-    width: 50%;
+    overflow: hidden;
+    white-space: nowrap;
     margin-bottom: 1em;
 }
 

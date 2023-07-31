@@ -1,8 +1,9 @@
-/* @media screen and (max-width: 930px ) {
+@media screen and (max-width: 930px ) {
     main{
         width: 97%;
         height: 96%;
     }
+
     .main-section nav, .main-section .artist-content, .main-section .popular-songs, .main-section .popular-artists{
         width: 96%;
     }
@@ -33,6 +34,28 @@
     }
 }
 
-@media screen and (max-width: 660px){
+@media screen and (max-width: 660px) {
+    .main-section nav ul {
+        display: none;
+        position: absolute;
+        flex-direction: column;
+        background: var(--main-bg-color);
+        padding: 1em;
+        z-index: 5;
+        top: 10%;
+        left: -1%;
+        border-radius: 15px;
+    }
 
-} */
+    .main-section nav ul li span {
+        width: 85%;
+    }
+
+    .main-section nav .hamburger-icon {
+        display: inline;
+    }
+
+    .main-section nav .search {
+        width: 45%;
+    }
+}
