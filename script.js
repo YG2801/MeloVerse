@@ -329,10 +329,10 @@ searchInputEl.addEventListener("keyup", () => {
             const { title, poster, album, id } = song;
             if (title.toUpperCase().indexOf(inputVal.toUpperCase()) > -1) {
                 htmlForSearch += `
-                <li class="search-result-card">
+                <li class="search-result-card flex">
                 <img src=${poster} alt="">
                 <div>
-                <p class="song-title" id=${id}>${title}</p>
+                <p class="song-title pointer-cursor" id=${id}>${title}</p>
                 <p class="song-album">${album}</p>
                 </div>
                 </li>
@@ -387,3 +387,15 @@ changeThemeBtnEl.addEventListener("click", (e)=>{
         e.target.dataset.theme = "purple";
     }
 })
+
+// const playlistBtn = document.getElementById("playlist-icon");
+// playlistBtn.addEventListener("click", ()=>{
+//     document.getElementById("side-bar").style.display = "block";
+//     document.getElementById("side-bar").style.transform = "translateX(63vw)";
+// })
+
+
+// const sideBarBackBtn = document.getElementById("side-bar-back-btn");
+// sideBarBackBtn.addEventListener("click", ()=>{
+//     document.getElementById("side-bar").style.display = "none";
+// })

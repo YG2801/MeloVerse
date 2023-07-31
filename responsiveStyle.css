@@ -1,0 +1,38 @@
+/* @media screen and (max-width: 930px ) {
+    main{
+        width: 97%;
+        height: 96%;
+    }
+    .main-section nav, .main-section .artist-content, .main-section .popular-songs, .main-section .popular-artists{
+        width: 96%;
+    }
+}
+
+@media screen and (max-width: 866px ) {
+    main{
+        width: 98%;
+        height: 97%;
+    }
+    .side-bar{
+        display: none;
+        position: absolute;
+        width: 35%;
+        height: 97%;
+        z-index: 5;
+    }
+
+    .side-bar .side-bar-back-btn{
+        display: inline;
+    }
+
+    .main-section{
+        width: 100%;
+    }
+    .main-section nav .playlist-icon {
+        display: inline;
+    }
+}
+
+@media screen and (max-width: 660px){
+
+} */

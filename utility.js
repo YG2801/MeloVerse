@@ -17,7 +17,7 @@ function getHtmlForMainSectionSongs(songArray){
                     <p class="song-title">${title}</p>
                     <p class="song-album">${album}</p>
                 </div>
-                <i class="fa-solid fa-circle-play song-play-btn" id=${id}></i>
+                <i class="fa-solid fa-circle-play song-play-btn pointer-cursor" id=${id}></i>
             </li>
         `
     }).join("");
@@ -32,14 +32,14 @@ function getHtmlForSideSectionSongs(songArray){
         else    countStr = count
         count++;
         return `
-            <li>
+            <li class="flex">
                 <span class="song-number">${countStr}</span>
                 <img src=${poster} alt="">
                 <div>
                     <p class="song-title">${title}</p>
                     <p class="song-artist">${artist}</p>
                 </div>
-                <i class="fa-solid fa-circle-play song-play-btn" id=${id}></i>
+                <i class="fa-solid fa-circle-play song-play-btn pointer-cursor" id=${id}></i>
             </li>
         `
     }).join("");

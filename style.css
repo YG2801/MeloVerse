@@ -36,9 +36,18 @@ main {
     margin: auto;
     width: 90%;
     height: 95%;
-    display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    overflow: hidden;
+}
+
+/* Utility Class */
+.flex {
+    display: flex;
+}
+
+.pointer-cursor{
+    cursor: pointer;
 }
 
 /* Side-bar section */
@@ -46,13 +55,25 @@ main {
 .side-bar {
     width: 25%;
     height: 89%;
+    border-radius: 0.5em;
     background: var(--main-bg-color);
+}
+
+.side-bar .side-bar-header{
+    align-items: center;
+    justify-content: space-between;
 }
 
 .side-bar h1 {
     font-weight: 500;
     margin: 0.6em 0 0 1em;
 }
+
+/* .side-bar .side-bar-back-btn{
+    margin-top: 0.9em;
+    margin-right: 0.6em;
+    display: none;
+} */
 
 .playlist-menu {
     margin: 2.5em 0 0 1.5em;
@@ -61,8 +82,6 @@ main {
 .playlist-menu h4 {
     margin-bottom: 1em;
     color: var(--secondary-text-color);
-    cursor: pointer;
-    display: flex;
     align-items: center;
     transition: color 0.2s linear;
 }
@@ -94,7 +113,6 @@ main {
 .side-bar-song-list li {
     list-style-type: none;
     padding: 0.5em 1em;
-    display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 0.5em;
@@ -103,10 +121,6 @@ main {
 
 .side-bar-song-list li:hover {
     background: var(--card-bg-color);
-}
-
-.fa-circle-play {
-    cursor: pointer;
 }
 
 .song-number {
@@ -147,9 +161,10 @@ main {
 .player-section {
     width: 100%;
     height: 10%;
+    border-radius: 0.5em;
     background: var(--player-section-bg-color);
-    display: flex;
     align-items: center;
+    z-index: 8;
 }
 
 .wave-container {
@@ -200,7 +215,6 @@ main {
     width: 10%;
     height: 80%;
     overflow: hidden;
-    display: flex;
     flex-direction: column;
     justify-content: center;
     line-height: 0.7;
@@ -208,14 +222,12 @@ main {
 
 .player-section .icons {
     margin-left: 0.5em;
-    display: flex;
     align-items: center;
     gap: 1em;
 }
 
 .player-section .icons i {
     width: 18px;
-    cursor: pointer;
 }
 
 .player-section .icons .hover-effect-icon:hover{
@@ -276,7 +288,6 @@ main {
     position: absolute;
     width: 100%;
     top: -7px;
-    cursor: pointer;
     z-index: 1;
     opacity: 0;
 }
@@ -284,7 +295,6 @@ main {
 .player-section .vol-icon {
     width: 20px;
     margin-inline: 0.5em;
-    cursor: pointer;
 }
 
 .player-section .volume-control-container {
@@ -331,7 +341,6 @@ main {
     position: absolute;
     width: 100%;
     top: -7px;
-    cursor: pointer;
     z-index: 1;
     opacity: 0;
 }
@@ -356,21 +365,18 @@ main {
     height: 10%;
     margin: auto;
     margin-block: 1em;
-    display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 .main-section nav ul {
     list-style-type: none;
-    display: flex;
     gap: 1em;
 }
 
 .main-section nav ul li {
     text-transform: uppercase;
     color: var(--secondary-text-color);
-    cursor: pointer;
     transition: 0.2s linear;
     position: relative;
 }
@@ -399,7 +405,6 @@ main {
     position: relative;
     border-radius: 20px;
     z-index: 1;
-    display: flex;
     align-items: center;
 }
 
@@ -419,6 +424,7 @@ main {
 }
 
 .main-section nav .search input {
+    width: 100%;
     background: transparent;
     border: none;
     outline: none;
@@ -446,7 +452,6 @@ main {
 .main-section nav .search-results-container .search-result-card {
     width: 100%;
     background: var(--nav-search-color);
-    display: flex;
     align-items: center;
     margin-bottom: 0.3em;
     padding: 3px;
@@ -461,7 +466,6 @@ main {
 
 .main-section nav .search-results-container .search-result-card .song-title {
     color: var(--primary-text-color);
-    cursor: pointer;
 }
 
 .main-section nav .search-results-container .search-result-card .song-album {
@@ -471,7 +475,6 @@ main {
 
 .main-section nav .change-theme-icon{
     font-size: large;
-    cursor: pointer;
     transition: 0.1s linear;
 }
 
@@ -489,6 +492,10 @@ main {
     border-radius: 50%;
     box-shadow: 0 0 10px white;
 }
+
+/* .main-section nav .playlist-icon {
+    display: none;
+} */
 
 .main-section .artist-content {
     width: 90%;
@@ -531,7 +538,6 @@ main {
     background: none;
     color: var(--lighter-shade-color);
     font-weight: bold;
-    cursor: pointer;
     transition: 0.1s linear;
 }
 
@@ -555,14 +561,12 @@ main {
 }
 
 .main-section .popular-songs .popular-songs-header {
-    display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .main-section .popular-songs .popular-songs-header i {
     color: var(--secondary-text-color);
-    cursor: pointer;
     transition: 0.2s;
     font-size: 1.2rem;
 }
@@ -578,7 +582,6 @@ main {
 
 .main-section .popular-songs .popular-songs-cards ul {
     list-style-type: none;
-    display: flex;
     overflow-x: auto;
     gap: 0.7em;
     scroll-behavior: smooth;
@@ -645,14 +648,12 @@ main {
 }
 
 .main-section .popular-artists .popular-artists-header {
-    display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .main-section .popular-artists .popular-artists-header i {
     color: var(--secondary-text-color);
-    cursor: pointer;
     transition: 0.2s;
     font-size: 1.2rem;
 }
@@ -667,7 +668,6 @@ main {
 
 .main-section .popular-artists .popular-artists-cards ul {
     list-style-type: none;
-    display: flex;
     overflow-x: auto;
     gap: 0.8em;
     scroll-behavior: smooth;
