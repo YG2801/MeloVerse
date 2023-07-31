@@ -457,7 +457,7 @@ main {
 
 .main-section nav .search-results-container .search-result-card {
     width: 100%;
-    background: var(--nav-search-color);
+    background: rgb(184, 184, 184, 0.4);
     align-items: center;
     margin-bottom: 0.3em;
     padding: 3px;
