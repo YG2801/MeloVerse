@@ -421,7 +421,6 @@ document.addEventListener("click", (e)=>{
     searchResultContainerEl.style.display = "none";
     searchResultContainerEl.innerHTML = "";
     searchInputEl.value = "";
-    console.log(screen.width);
     if(e.target.id != "hamburger-icon" && screen.width <= 660){
         navListEl.style.display = "none";
     }

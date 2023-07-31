@@ -58,10 +58,31 @@
     .main-section nav .search {
         width: 45%;
     }
+
+    .main-section .artist-content .buttons button{
+        width: 25%;
+    }
 }
 
 @media screen and (max-width: 576px) {
     .side-bar{
         width: 60%;
+    }
+
+    .main-section .artist-content h1{
+        font-size: 2rem;
+    }
+
+    .main-section .artist-content h4{
+        font-size: 0.8rem;
+    }
+
+    .main-section .artist-content .buttons{
+        margin-top: 1.5em;
+    }
+
+    .main-section .artist-content .buttons button{
+        width: 40%;
+        margin-left: 1em;
     }
 }
