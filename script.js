@@ -386,15 +386,21 @@ changeThemeBtnEl.addEventListener("click", (e)=>{
 // For Responsive Design
 
 const playlistBtn = document.getElementById("playlist-icon");
+const sideBarEl =     document.getElementById("side-bar");
 playlistBtn.addEventListener("click", ()=>{
-    document.getElementById("side-bar").style.display = "block";
-    document.getElementById("side-bar").style.transform = "translateX(63vw)";
+    if(screen.width <= 576){
+        sideBarEl.style.transform = "translateX(38vw)";
+    }
+    else{
+        sideBarEl.style.transform = "translateX(63vw)";
+    }
+    sideBarEl.style.display = "block";
 })
 
 
 const sideBarBackBtn = document.getElementById("side-bar-back-btn");
 sideBarBackBtn.addEventListener("click", ()=>{
-    document.getElementById("side-bar").style.display = "none";
+    sideBarEl.style.display = "none";
 })
 
 const hamburgerIcon = document.getElementById("hamburger-icon");
