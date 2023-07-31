@@ -69,6 +69,10 @@
         width: 60%;
     }
 
+    .main-section {
+        height: 91%;
+    }
+
     .main-section .artist-content{
         height: 30%;
     }
@@ -88,5 +92,52 @@
     .main-section .artist-content .buttons button{
         width: 40%;
         margin-left: 1em;
+    }
+    .player-section {
+        position: fixed;
+        top: 90vh;
+    }
+
+    .player-section .wave-container{
+        position: absolute;
+        top: -110%;
+        left: 0;
+        right: 0;
+        margin-inline: auto;
+        width: 24px;
+    }
+
+    .player-section .icons{
+        position: absolute;
+        bottom: 102%;
+        left: 0; 
+        right: 0; 
+        margin-left: auto; 
+        margin-right: auto; 
+        width: 154px;
+    }
+
+    .player-section .icons::before{
+        content: "";
+        position: absolute;
+        left: -13px;
+        width: 180px;
+        height: 180px;
+        border-radius: 50% 50% 0 0;
+        background: var(--player-section-bg-color);
+        z-index: -1;
+        opacity: 0.9;
+    }
+    .player-section .song-slider-container{
+        width: 30%;
+    }
+    .player-section .volume-control-container{
+        width: 10%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .player-section .song-details{
+        display: none;
     }
 }
