@@ -69,6 +69,10 @@
         width: 60%;
     }
 
+    .main-section .artist-content{
+        height: 30%;
+    }
+
     .main-section .artist-content h1{
         font-size: 2rem;
     }
