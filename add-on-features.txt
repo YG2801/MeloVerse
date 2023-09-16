@@ -4,6 +4,7 @@
 
 3. Voice Search
 
-4. Change Theme
-
 5. Specific Artist Songs
+
+
+***-> Forgot to add logic to next and prev play buttons on changing the loop and shuffle functionality

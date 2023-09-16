@@ -1,124 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MeloVerse</title>
-    <link rel="shortcut icon" href="Assets/favicon_io/favicon-32x32.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="responsiveStyle.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
+    <link
+      rel="shortcut icon"
+      href="Assets/favicon_io/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsiveStyle.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
 
-<body>
+  <body>
     <main class="flex">
-        <section class="main-section">
-            <nav class="flex">
-                <i class="fa-solid fa-bars hamburger-icon" id="hamburger-icon"></i>
-                <ul class="flex nav-list">
-                    <li class="pointer-cursor">Discover<span></span></li>
-                    <li class="pointer-cursor">My Library</li>
-                    <li class="pointer-cursor">Radio</li>
-                </ul>
-                <div class="search flex">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    <input type="text" placeholder="Search">
-                    <div class="search-results-container" id="search-results-container">
-                    </div>
-                </div>
-                <i class="fa-solid fa-palette change-theme-icon pointer-cursor" id="change-theme-btn" data-theme="purple"></i>
-                <img src="Assets/Images/picture.jpg" alt="" class="user-img">
-                <i class="fa-solid fa-list-ul playlist-icon" id="playlist-icon"></i>
-            </nav>
-            <div class="artist-content">
-                <h1>I am Arijit Singh</h1>
-                <h4>Listen my songs on MeloVerse</h4>
-                <div class="buttons">
-                    <button class="play-btn pointer-cursor">PLAY</button>
-                    <button class="pointer-cursor">FOLLOW</button>
-                </div>
+      <section class="main-section">
+        <nav class="flex">
+          <i class="fa-solid fa-bars hamburger-icon" id="hamburger-icon"></i>
+          <ul class="flex nav-list">
+            <li class="pointer-cursor">Discover<span></span></li>
+            <li class="pointer-cursor">My Library</li>
+            <li class="pointer-cursor">Radio</li>
+          </ul>
+          <div class="search flex">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Search" />
+            <div
+              class="search-results-container"
+              id="search-results-container"
+            ></div>
+          </div>
+          <i
+            class="fa-solid fa-palette change-theme-icon pointer-cursor"
+            id="change-theme-btn"
+            data-theme="purple"
+          ></i>
+          <img src="Assets/Images/picture.jpg" alt="" class="user-img" />
+          <i class="fa-solid fa-list-ul playlist-icon" id="playlist-icon"></i>
+        </nav>
+        <div class="artist-content">
+          <h1>I am Arijit Singh</h1>
+          <h4>Listen my songs on MeloVerse</h4>
+          <div class="buttons">
+            <button class="play-btn pointer-cursor">PLAY</button>
+            <button class="pointer-cursor">FOLLOW</button>
+          </div>
+        </div>
+        <div class="popular-songs">
+          <div class="popular-songs-header flex">
+            <h3>Popular Songs</h3>
+            <div class="move-btns">
+              <i
+                class="fa-solid fa-caret-left pointer-cursor"
+                id="pop-song-scroll-left"
+              ></i>
+              <i
+                class="fa-solid fa-caret-right pointer-cursor"
+                id="pop-song-scroll-right"
+              ></i>
             </div>
-            <div class="popular-songs">
-                <div class="popular-songs-header flex">
-                    <h3>Popular Songs</h3>
-                    <div class="move-btns">
-                        <i class="fa-solid fa-caret-left pointer-cursor" id="pop-song-scroll-left"></i>
-                        <i class="fa-solid fa-caret-right pointer-cursor" id="pop-song-scroll-right"></i>
-                    </div>
-                </div>
-                <div class="popular-songs-cards">
-                    <ul class="flex">
-                    </ul>
-                </div>
+          </div>
+          <div class="popular-songs-cards">
+            <ul class="flex"></ul>
+          </div>
+        </div>
+        <div class="popular-artists">
+          <div class="popular-artists-header flex">
+            <h3>Popular Artists</h3>
+            <div class="move-btns">
+              <i
+                class="fa-solid fa-caret-left pointer-cursor"
+                id="pop-artist-scroll-left"
+              ></i>
+              <i
+                class="fa-solid fa-caret-right pointer-cursor"
+                id="pop-artist-scroll-right"
+              ></i>
             </div>
-            <div class="popular-artists">
-                <div class="popular-artists-header flex">
-                    <h3>Popular Artists</h3>
-                    <div class="move-btns">
-                        <i class="fa-solid fa-caret-left pointer-cursor" id="pop-artist-scroll-left"></i>
-                        <i class="fa-solid fa-caret-right pointer-cursor" id="pop-artist-scroll-right"></i>
-                    </div>
-                </div>
-                <div class="popular-artists-cards">
-                    <ul class="flex">
-                    </ul>
-                </div>
-            </div>
-        </section>
-        <section class="side-bar" id="side-bar">
-            <div class="side-bar-header flex">
-                <h1>Playlist</h1>
-                <i class="fa-solid fa-chevron-left side-bar-back-btn" id="side-bar-back-btn"></i>
-            </div>
-            <div class="playlist-menu">
-                <h4 class="flex pointer-cursor"><i class="fa-solid fa-music fa-beat"></i>Playlist</h4>
-                    <h4 class="flex pointer-cursor"><i class="fa-solid fa-headphones-simple"></i>Last Listening</h4>
-                        <h4 class="flex pointer-cursor"><i class="fa-solid fa-record-vinyl"></i>Recommended</h4>
-            </div>
-            <div class="side-bar-song-list">
-                <ul>
-                </ul>
-            </div>
-        </section>
-        <section class="player-section flex">
-            <div class="wave-container">
-                <div class="wave-rect wave-box1"></div>
-                <div class="wave-rect wave-box2"></div>
-                <div class="wave-rect wave-box3"></div>
-            </div>
-            <img src="Assets/Images/1.jpg" alt="">
-            <div class="song-details flex">
-                <p class="song-title">On My Way</p>
-                <p class="song-artist">Alan Walker</p>
-            </div>
-            <div class="icons flex pointer-cursor">
-                <i class="fa-solid fa-music hover-effect-icon" id="mode-btn" data-mode="next"=""></i>
-                <i class="fa-solid fa-backward-step" id="previous-track-btn"></i>
-                <i class="fa-solid fa-play" id="play-pause-btn"></i>
-                <i class="fa-solid fa-forward-step" id="next-track-btn"></i>
-                <a href="" download="" id="download-btn"><i class="fa-solid fa-download"></i></a>
-            </div>
-            <p class="time" id="time-elapsed">0:00</p>
-            <div class="song-slider-container">
-                <input type="range" id="primary-progress-bar" min="0" max="100" class="pointer-cursor">
-                <div class="secondary-slider" id="secondary-progress-bar"></div>
-                <div class="secondary-slider-thumb" id="secondary-progress-thumb"></div>
-            </div>
-            <p class="time" id="total-time">0:00</p>
-            <i class="pointer-cursor vol-icon fa-solid fa-volume-high" id="vol-icon"></i>
-            <div class="volume-control-container">
-                <input type="range" id="primary-volume-bar" min="0" max="100" class="pointer-cursor">
-                <div class="secondary-vol-slider" id="secondary-volume-bar"></div>
-                <div class="secondary-vol-slider-thumb" id="secondary-volume-thumb"></div>
-            </div>
-        </section>
+          </div>
+          <div class="popular-artists-cards">
+            <ul class="flex"></ul>
+          </div>
+        </div>
+      </section>
+      <section class="side-bar" id="side-bar">
+        <div class="side-bar-header flex">
+          <h1>Playlist</h1>
+          <i
+            class="fa-solid fa-chevron-left side-bar-back-btn"
+            id="side-bar-back-btn"
+          ></i>
+        </div>
+        <div class="playlist-menu">
+          <h4 class="flex pointer-cursor">
+            <i class="fa-solid fa-music fa-beat"></i>Playlist
+          </h4>
+          <h4 class="flex pointer-cursor">
+            <i class="fa-solid fa-headphones-simple"></i>Last Listening
+          </h4>
+          <h4 class="flex pointer-cursor">
+            <i class="fa-solid fa-record-vinyl"></i>Recommended
+          </h4>
+        </div>
+        <div class="side-bar-song-list">
+          <ul></ul>
+        </div>
+      </section>
+      <section class="player-section flex">
+        <div class="wave-container">
+          <div class="wave-rect wave-box1"></div>
+          <div class="wave-rect wave-box2"></div>
+          <div class="wave-rect wave-box3"></div>
+        </div>
+        <img src="Assets/Images/1.jpg" alt="" />
+        <div class="song-details flex">
+          <p class="song-title">On My Way</p>
+          <p class="song-artist">Alan Walker</p>
+        </div>
+        <div class="icons flex pointer-cursor">
+          <i
+            class="fa-solid fa-music hover-effect-icon"
+            id="mode-btn"
+            data-mode="next"
+            =""
+          ></i>
+          <i class="fa-solid fa-backward-step" id="previous-track-btn"></i>
+          <i class="fa-solid fa-play" id="play-pause-btn"></i>
+          <i class="fa-solid fa-forward-step" id="next-track-btn"></i>
+          <a href="" download="" id="download-btn"
+            ><i class="fa-solid fa-download"></i
+          ></a>
+        </div>
+        <p class="time" id="time-elapsed">0:00</p>
+        <div class="song-slider-container">
+          <input
+            type="range"
+            id="primary-progress-bar"
+            min="0"
+            max="100"
+            class="pointer-cursor"
+          />
+          <div class="secondary-slider" id="secondary-progress-bar"></div>
+          <div
+            class="secondary-slider-thumb"
+            id="secondary-progress-thumb"
+          ></div>
+        </div>
+        <p class="time" id="total-time">0:00</p>
+        <i
+          class="pointer-cursor vol-icon fa-solid fa-volume-high"
+          id="vol-icon"
+        ></i>
+        <div class="volume-control-container">
+          <input
+            type="range"
+            id="primary-volume-bar"
+            min="0"
+            max="100"
+            class="pointer-cursor"
+          />
+          <div class="secondary-vol-slider" id="secondary-volume-bar"></div>
+          <div
+            class="secondary-vol-slider-thumb"
+            id="secondary-volume-thumb"
+          ></div>
+        </div>
+      </section>
     </main>
     <script src="script.js" type="module"></script>
     <script src="data.js" type="module"></script>
     <script src="utility.js" type="module"></script>
-</body>
-
+  </body>
 </html>
